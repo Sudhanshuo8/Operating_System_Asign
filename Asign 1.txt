@@ -1,0 +1,142 @@
+
+
+
+
+Q1. Explore the following commands with various options, refer man pages for 
+    further help 
+
+a) date: $ date
+
+
+b) cal $ cal
+   
+
+c) bc: bc (Basic Calculator) is a command. bc command is used for command line calculator. 
+
+ d) echo:this command is used to write the contents in particular file.
+
+ e) who: who displays a list of users who are currently logged into the computer.
+
+ f) whoami:it displays the system name
+
+ g) logname :it displays the system name.which we are currently log in.
+
+g) uname:it displays the IDE name. means where you perform the operations.
+
+ h)seq:  seq command in Linux is used to generate numbers from FIRST to LAST in steps of INCREMENT.
+seq 9
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+i) clear: this command is used to clear terminal.
+
+
+Q2.	
+A) Create three directory a b and c and create a.txt,b.txt and c.txt in each directory respectively and then copy c directory into the a.
+ANS:  cp -r c a
+
+B)Move Directory b to c.
+ANS: mv b c
+
+C)Create alias of ls -lh command to your name.
+ANS: alias Ashwini=ls
+alias Ashwini=-lh
+
+
+
+
+D)Change Directory name a to cdac.
+ANS: $ mv a CDAC
+
+
+Q3. 
+A) Create five files file1.txt , file2.txt ,file3.txt file4.txt and
+    file5.txt with some text inside it. Search for 's' character
+    inside all the files using grep command.
+$ cat > file1.txt
+this is file 1
+
+$ cat > file2.txt
+this is file 2
+
+$ cat > file3.txt
+this is file 3
+
+$ cat > file4.txt
+this is file 4
+
+$ cat > file5.txt
+this is file 5
+
+$ grep -o "s" file1.txt
+s
+s
+
+$ grep -n "s" file1.txt
+1:this is file 1
+
+
+Also Use cat to view all file content together.
+B)Create file.txt using cat and edit that using nano editor.
+Cat > file.txt
+Hello cdac
+	
+c)Create 5 empty files using touch command
+$ touch f1 f2 f3 f4 f5
+
+	
+D)Remove previously created directory a , b and c.
+rm -r a
+
+
+rm -r b
+
+
+rm -r c
+
+
+
+Q4. Create a file with some content using vi editor
+	
+ANS:$ vi z1.txt
+
+a)Display the file using cat command
+Ans:cat z1.txt
+b)Display line numbers along with content
+ANS:$ cat -n z1.txt
+cat -b z1.txt(lank line numbers doesn’t display )
+
+
+c)Display the file in reverse order using tac
+ANS:
+d) Combine multiple files using cat command
+
+Q5. Create Random some files and sub directories.
+a)display files row wise, column wise, 1 per row
+column file3.txt
+b)sort the files in ascending, descending order
+Ans:for Accending
+ls command is automatically sort the files by name
+
+for Descending
+$ ls -1 | sort
+
+
+
+d)Change time stamp of some files and directories using touch command and display the files using ls -t ls –rt
+e)Touch command is used to change these timestamps (access time, modification time, and change time of a file).
+
+f)Recursive display contents of your home directory.
+Ls -r
+g)display all attributes of files and directories using ls –l
+$ ls -l
+total 218
+-rw-r--r--  1 Shree None     19 Sep  7 22:05 b.txt
+drwxr-xr-x+ 1 Shree None      
