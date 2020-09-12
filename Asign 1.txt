@@ -140,3 +140,52 @@ $ ls -l
 total 218
 -rw-r--r--  1 Shree None     19 Sep  7 22:05 b.txt
 drwxr-xr-x+ 1 Shree None      
+
+1)
+$ mkdir a
+~$ cd a
+~/a$ touch a.txt
+~/a$ touch .hidden.txt
+~/a$ 
+A.
+~/a$ mkdir b
+~/a$ cd b
+~/a/b$ touch b.txt
+~/a/b$ touch .hidden.txt
+B.
+~/a/b$ mkdir c
+~/a/b$ touch c.txt
+~/a/b$ touch .hidden.txt
+~/a/b$ 
+C.
+~/a/b$ cp -r c a
+ 
+~/a/b$ cp -r a/a.txt a/b
+D.
+~/a/b$ cd
+~$ cp -r a/a.txt a/b
+~$ 
+~$ cp -r a/c a/b
+
+2)
+~$chmod a=r c
+
+3)permission denied
+4)~$ mkdir data
+5) ~$ chmod +rw b
+6)~$ mkdir data2
+7)~$ touch data.txt
+8)~$ mv c copied_dir
+9)~$  chmod +x copied_dir
+10)~$ ls
+11)permission denied for hidden file,c.txt file
+12)~$ mv a/b/data/ a
+13)~$ sudo chmod
+14)~$ chmod o+rwx a
+15)~$ mkdir sample
+16)~$ mkdir x
+17)~$ mv  x a
+18)~$ mkdir movies
+21)~$ chmod a=rwx a
+25)~$ rm b.txt
+
